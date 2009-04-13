@@ -112,7 +112,7 @@ tag.open.other.html attribute-name punctuation.separator{
 styling {
 	color:#fff;
 	background:#000;
-	/*spell-check: disabled;*/
+	spell-check: disabled;
 }
 
 styling > selector{

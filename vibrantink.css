@@ -1,0 +1,176 @@
+/*
+	@theme Vibrant Ink
+	@override-placeholders html, xml, css, sourcecode.js, php
+	@author Justin Palmer - ported by Jack Westbrook
+*/
+
+
+@base {
+    color: #fff;
+    background-color: #101010;
+    insertion-point-color: #fff;
+    selection-background-color: #35493C;
+}
+
+comment{
+	color:#9933CC;
+}
+
+string,
+function literal.string,
+literal string
+{
+	color:#66FF00;
+	font-weight:normal;
+}
+
+tag, source, sourcecode {
+	spell-check: disabled;
+}
+
+
+/* php */
+
+php > container{
+	background-color: #000;
+	color: #fff;
+}
+
+php > delimiter,
+php > keyword,
+php > container keyword.php,
+php > variable,
+php > variable variable.begin,
+php > block name,
+php > block variable,
+php > identifier comma,
+php > function comma,
+php > container identifier.function,
+php > container function.parenthesis-delimited,
+php > container delimiter.parenthesis,
+php > literal keyword {
+	color: #fff;
+	font-weight: normal;
+}
+
+php > container,
+php > container.block,
+php > block keyword,
+php > identifier.function,
+php > operator.accessor,
+php > container separator.pairing,
+php > block operator {
+	color:#FF6600;
+	font-weight: normal;
+}
+
+php > function.parenthesis-delimited name {
+	color:#FFCC00;
+}
+
+php > function parenthesis {
+	color:#fff;
+}
+
+php > block literal.keyword,
+php > function literal.numeric{
+	background-color:#000;
+	color:#339999;
+}
+
+php > literal escape {
+	color:#aaa;
+}
+/* html */
+
+
+html > entity,
+tag punctuation.separator {
+	color:#fff;
+}
+
+tag.open.other.html,
+tag.open.other.html name,
+tag.close.other.html,
+tag.close.other.html name {
+	color:#FF6600;
+}
+
+tag attribute-value.quoted {
+	color:#66FF00;
+	font-weight:normal;
+}
+
+tag.open.other.html attribute-name,
+tag.open.other.html attribute-name punctuation.separator{
+	color:#99CC99;
+	font-style:italic !important;
+}
+
+/* css */
+
+styling {
+	color:#fff;
+	background:#000;
+	/*spell-check: disabled;*/
+}
+
+styling > selector{
+	color:#FF6600;
+}
+
+styling > property-list property-name{
+	color:#999966;
+}
+
+styling > property-list rgb-value{
+	color:#339999;
+}
+
+styling > property-list string.quoted{
+	color:#66FF00;
+}
+
+styling > property-list keyword.important{
+	color:#FFCC00;
+}
+
+/* javascript */
+sourcecode.js{
+	background:#000;
+}
+
+function.js support.class{
+	font-weight:bold;
+	text-decoration:underline !important;
+}
+function.js name,
+function.js storage.type{
+	color:#FFCC00;
+}
+
+keyword.control.js{
+	color:#CCCC66;
+}
+
+constant.language.js{
+	color:#339999;
+}
+constant.numeric.js{
+	color:#339999;	
+}
+keyword.operator.new.js{
+	color:#FF6600;
+}
+
+/* xml */
+
+xml tag attribute-name{
+	color:#99CC99;
+}
+
+xml tag.open,
+xml tag.close {
+	color:#FF6600;
+}
+
